@@ -1,0 +1,36 @@
+<h1>Add Student</h1>
+
+<form (ngOnSubmit)="addStudent()">
+  <label for="Name">Name</label>
+  <input id="Name" [(ngModel)]="student.Name" />
+  <br>
+  <label for="Age">Age</label>
+  <input id="Age" type="number" [(ngModel)]="student.Age" />
+  <br>
+  <label for="House">House</label>
+  <input id="House"  [(ngModel)]="student.House" />
+  <br>
+  <label for="Gender">Gender</label>
+  <input id="Gender"  [(ngModel)]="student.Gender" />
+  <br>
+  <label for="Father">Father</label>
+  <input id="Father"  [(ngModel)]="student.Father" />
+  <br>
+  <label for="Mother">Mother</label>
+  <input id="Mother"  [(ngModel)]="student.Mother" />
+  <br>
+  <label for="DOB">DateOfBirth</label>
+  <input id="DOB" type="date"  [(ngModel)]="student.DateOfBirth" />
+
+  <button type="submit">Add Student</button>
+</form>
+
+<!-- export default interface Student {
+  "Name": string
+    "Age": number
+    "House":string
+    "Gender":string
+    "Father": string
+    "Mother": string
+    "DateOfBirth": Date
+} -->
